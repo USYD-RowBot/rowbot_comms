@@ -22,7 +22,7 @@ class _conman():
         navsub = rospy.Subscriber(gpsChannel, NavSatFix, self.nav_callback)
         comms.conman_init(ip, port, TMID)
         self.hbstate = {
-            'mode': mode
+            'mode': mode,
             'AUVstat': 1
         }
         self.hbready = False
@@ -32,7 +32,7 @@ class _conman():
                 'longitude': 0,
                 'longEW': 'E',
                 'latNS': 'N',
-                'mode': mode
+                'mode': mode,
                 'AUVstat': 1
             }
             self.hbready = True

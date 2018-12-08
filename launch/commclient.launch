@@ -1,6 +1,6 @@
 <launch>
-<param name="ip" value="0.0.0.0"/>
-<param name="port" value="9999"/>
+<param name="ip" value="localhost"/>
+<param name="port" value="12345"/>
 <param name="TID" value="USYD_ROWBOT"/>
 <param name="debug" value="true"/>
 <node name="communicator" type="conman.py" pkg="rowbot_comms">
